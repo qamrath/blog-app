@@ -1,4 +1,4 @@
-import sequelize from '../config/db.js'; // Adjust path as per your project structure
+import sequelize from '../config/db.js'; 
 import User from '../models/user.js';
 import { Post } from '../models/post.js';
 

@@ -8,7 +8,7 @@ dotenv.config();
 const sequelize = new Sequelize({
     dialect: 'mysql',
     host: 'localhost',
-    port: 3306, // Your MySQL port
+    port: 3306, // MySQL port
     username: 'root',
     password: 'root',
     database: 'user',

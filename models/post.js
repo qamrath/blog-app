@@ -19,8 +19,8 @@ Post.init({
     allowNull: false
   }
 }, {
-  sequelize, // Pass the sequelize instance
-  modelName: 'Post' // Choose the model name
+  sequelize,
+  modelName: 'Post' //model name
 });
 
 export {Post};// Named export

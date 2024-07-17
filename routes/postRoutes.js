@@ -11,4 +11,4 @@ router.post('/', authMiddleware, createPost);
 router.put('/:id', authMiddleware, updatePost);
 router.delete('/:id', authMiddleware, deletePost);
 
-export default router; // Export the router instance as default
+export default router; 

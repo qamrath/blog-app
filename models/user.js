@@ -5,7 +5,7 @@ import sequelize from '../config/db.js';
 class User extends Model {}
 
 User.init({
-  // Define model attributes
+  // model attributes
   username: {
     type: DataTypes.STRING,
     allowNull: false
@@ -20,8 +20,8 @@ User.init({
     allowNull: false
   }
 }, {
-  sequelize, // Pass the sequelize instance
-  modelName: 'User' // Choose the model name
+  sequelize, 
+  modelName: 'User' 
 });
 
 export default User;

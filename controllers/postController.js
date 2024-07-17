@@ -11,7 +11,7 @@ async function getAllPosts(req, res, next) {
 
 async function createPost(req, res, next) {
     const { title, content } = req.body;
-    const userId = req.user?.userId; // Ensure userId is correctly extracted
+    const userId = req.user?.userId; 
     
     try {
       if (!userId) {
@@ -21,7 +21,7 @@ async function createPost(req, res, next) {
       const post = await Post.create({ title, content, userId });
       res.status(201).json(post);
     } catch (error) {
-      next(error); // Pass error to global error handler
+      next(error); 
     }
   }
   
